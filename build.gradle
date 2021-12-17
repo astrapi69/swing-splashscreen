@@ -49,6 +49,8 @@ javadoc {
     if(JavaVersion.current().isJava9Compatible()) {
         options.addBooleanOption("html5", true)
     }
+    failOnError = false
+    exclude 'io/github/astrapi69/**'
 }
 
 tasks.withType(JavaCompile) {

@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2015 Asterios Raptis
+ * Copyright (C) 2021 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -24,14 +24,15 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
+import java.util.LinkedHashSet;
+
+import javax.swing.*;
+
 import io.github.astrapi69.model.BaseModel;
 import io.github.astrapi69.model.api.Model;
 import io.github.astrapi69.swing.panels.lottery.LotteryBox;
 import io.github.astrapi69.swing.panels.lottery.LotteryPanel;
 import io.github.astrapi69.window.adapter.CloseWindow;
-
-import javax.swing.*;
-import java.util.LinkedHashSet;
 
 public class BaseSplashScreenTest
 {
@@ -46,9 +47,8 @@ public class BaseSplashScreenTest
 	{
 		final JFrame frame = new JFrame("Lottery Panel");
 		Model<LotteryBox> lotteryModel;
-		lotteryModel = BaseModel.of(
-			LotteryBox.builder().selectedNumbers(new LinkedHashSet<>()).minVolume(1).maxVolume(49)
-				.rows(7).columns(7).build());
+		lotteryModel = BaseModel.of(LotteryBox.builder().selectedNumbers(new LinkedHashSet<>())
+			.minVolume(1).maxVolume(49).rows(7).columns(7).build());
 		final LotteryPanel panel = new LotteryPanel(lotteryModel);
 		frame.add(panel);
 		frame.addWindowListener(new CloseWindow());

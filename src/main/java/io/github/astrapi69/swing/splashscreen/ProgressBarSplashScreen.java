@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2015 Asterios Raptis
+ * Copyright (C) 2021 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -24,10 +24,11 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import io.github.astrapi69.model.api.Model;
+import java.awt.*;
 
 import javax.swing.*;
-import java.awt.*;
+
+import io.github.astrapi69.model.api.Model;
 
 /**
  * The {@link ProgressBarSplashScreen} for an application that have to support progress bar
@@ -64,10 +65,12 @@ public class ProgressBarSplashScreen extends BaseSplashScreen
 			getModelObject().getShowTime());
 		Thread splashscreenThread = new Thread()
 		{
-			@Override public void run()
+			@Override
+			public void run()
 			{
 				stepSleepTimerThread.start();
-				while (getModelObject().isShowing() && stepSleepTimerThread.getCount() <= getModelObject().getShowTime())
+				while (getModelObject().isShowing()
+					&& stepSleepTimerThread.getCount() <= getModelObject().getShowTime())
 				{
 					ProgressBarSplashScreen.this.setVisible(true);
 				}

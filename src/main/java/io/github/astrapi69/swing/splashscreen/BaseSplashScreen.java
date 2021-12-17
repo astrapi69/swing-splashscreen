@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2015 Asterios Raptis
+ * Copyright (C) 2021 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -24,23 +24,24 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import io.github.astrapi69.lang.ClassExtensions;
-import io.github.astrapi69.model.api.Model;
-import io.github.astrapi69.swing.base.BaseWindow;
-import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.experimental.FieldDefaults;
-
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.Border;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.experimental.FieldDefaults;
+import io.github.astrapi69.lang.ClassExtensions;
+import io.github.astrapi69.model.api.Model;
+import io.github.astrapi69.swing.base.BaseWindow;
+import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
 
 /**
  * The BaseSplashScreen for an application
