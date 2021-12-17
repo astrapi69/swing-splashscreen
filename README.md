@@ -2,20 +2,22 @@
 
 <div style="text-align: center">
 
-[![Build Status](https://travis-ci.com/astrapi69/java-library-template.svg?branch=master)](https://travis-ci.com/github/astrapi69/java-library-template)
-[![Coverage Status](https://codecov.io/gh/astrapi69/java-library-template/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/java-library-template)
-[![Open Issues](https://img.shields.io/github/issues/astrapi69/java-library-template.svg?style=flat)](https://github.com/astrapi69/java-library-template/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/java-library-template/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/java-library-template)
-[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/java-library-template.svg)](http://www.javadoc.io/doc/io.github.astrapi69/java-library-template)
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.com/astrapi69/swing-splashscreen.svg?branch=master)](https://travis-ci.com/github/astrapi69/swing-splashscreen)
+[![Coverage Status](https://codecov.io/gh/astrapi69/swing-splashscreen/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/swing-splashscreen)
+[![Open Issues](https://img.shields.io/github/issues/astrapi69/swing-splashscreen.svg?style=flat)](https://github.com/astrapi69/swing-splashscreen/issues)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/swing-splashscreen/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/swing-splashscreen)
+[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/swing-splashscreen.svg)](http://www.javadoc.io/doc/io.github.astrapi69/swing-splashscreen)
+[![MIT License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
+[![Hits Of Code](https://hitsofcode.com/github/astrapi69/swing-splashscreen)](https://hitsofcode.com/github/astrapi69/swing-splashscreen/view)
+[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/swing-splashscreen)](https://github.com/astrapi69/swing-splashscreen)
 
 </div>
 
-Template project for create java library projects. 
+This repository provides splashscreen components for swing applications. 
 
 > Please support this project by simply putting a Github <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/astrapi69/java-library-template" data-icon="octicon-star" aria-label="Star astrapi69/java-library-template on GitHub">Star ⭐</a>
+<a class="github-button" href="https://github.com/astrapi69/swing-splashscreen" data-icon="octicon-star" aria-label="Star astrapi69/swing-splashscreen on GitHub">Star ⭐</a>
 >
 > Share this library with friends on Twitter and everywhere else you can
 >
@@ -33,32 +35,32 @@ No animals were harmed in the making of this library.
 
 ## License
 
-The source code comes under the liberal MIT License, making java-library-template great for all types of applications.
+The source code comes under the liberal MIT License, making swing-splashscreen great for all types of applications.
 
 ## Maven dependency
 
 Maven dependency is now on sonatype.
-Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~java-library-template~~~) for latest snapshots and releases.
+Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~swing-splashscreen~~~) for latest snapshots and releases.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core 
-functionality of java-library-template:
+functionality of swing-splashscreen:
 
 Than you can add the dependency to your dependencies:
 
 	<properties>
 			...
-		<!-- java-library-template version -->
-		<java-library-template.version>1</java-library-template.version>
+		<!-- swing-splashscreen version -->
+		<swing-splashscreen.version>1</swing-splashscreen.version>
 			...
 	</properties>
 			...
 		<dependencies>
 			...
-			<!-- java-library-template DEPENDENCY -->
+			<!-- swing-splashscreen DEPENDENCY -->
 			<dependency>
 				<groupId>io.github.astrapi69</groupId>
-				<artifactId>java-library-template</artifactId>
-				<version>${java-library-template.version}</version>
+				<artifactId>swing-splashscreen</artifactId>
+				<version>${swing-splashscreen.version}</version>
 			</dependency>
 			...
 		</dependencies>
@@ -66,11 +68,11 @@ Than you can add the dependency to your dependencies:
 ## gradle dependency
 
 You can first define the version in the ext section and add than the following gradle dependency to
-your project `build.gradle` if you want to import the core functionality of java-library-template:
+your project `build.gradle` if you want to import the core functionality of swing-splashscreen:
 
 define version in file gradle.properties
 ```
-javaLibraryTemplateVersion=1
+swingSplashscreenVersion=1
 ```
 
 or in build.gradle ext area
@@ -78,7 +80,7 @@ or in build.gradle ext area
 ```
 ext {
 			...
-    javaLibraryTemplateVersion = "1"
+    swingSplashscreenVersion = "1"
 			...
 }
 ```
@@ -88,7 +90,7 @@ then add the dependency to the dependencies area
 ```
 dependencies {
 			...
-    implementation("io.github.astrapi69:java-library-template:$javaLibraryTemplateVersion")
+    implementation("io.github.astrapi69:swing-splashscreen:$swingSplashscreenVersion")
 			...
 }
 ```
@@ -98,11 +100,17 @@ dependencies {
 This project is kept as an open source product and relies on contributions to remain being
 developed. If you like this library, please consider a donation
 
-over paypal: <br><br>
+over paypal:
+<br>
+<br>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJ7V43GU2H386" target="_blank">
-<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" alt="PayPal this" title="PayPal – The safer, easier way to pay online!" style="border: none" />
+    <img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+         alt="PayPal this"
+         title="PayPal – The safer, easier way to pay online!"
+         style="border: none" />
 </a>
-<br><br>
+<br>
+<br>
 or over bitcoin(BTC) with this address:
 
 bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy
@@ -149,7 +157,7 @@ or over the donation buttons at the top.
 
 ## Semantic Versioning
 
-The versions of java-library-template are maintained with the Semantic Versioning guidelines.
+The versions of swing-splashscreen are maintained with the Semantic Versioning guidelines.
 
 Release version numbers will be incremented in the following format:
 
@@ -159,18 +167,18 @@ For detailed information on versioning you can visit the [wiki page](https://git
 
 ## Want to Help and improve it? ###
 
-The source code for java-library-template are on GitHub. Please feel free to fork and send pull requests!
+The source code for swing-splashscreen are on GitHub. Please feel free to fork and send pull requests!
 
-Create your own fork of [astrapi69/java-library-template/fork](https://github.com/astrapi69/java-library-template/fork)
+Create your own fork of [astrapi69/swing-splashscreen/fork](https://github.com/astrapi69/swing-splashscreen/fork)
 
-To share your changes, [submit a pull request](https://github.com/astrapi69/java-library-template/pull/new/develop).
+To share your changes, [submit a pull request](https://github.com/astrapi69/swing-splashscreen/pull/new/develop).
 
 Don't forget to add new units tests on your changes.
 
 ## Contacting the Developers
 
-Do not hesitate to contact the java-library-template developers with your questions, concerns, comments, bug reports, or feature requests.
-- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/java-library-template/issues).
+Do not hesitate to contact the swing-splashscreen developers with your questions, concerns, comments, bug reports, or feature requests.
+- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/swing-splashscreen/issues).
 
 ## Similar projects
 
