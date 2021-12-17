@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2021 Asterios Raptis
+ * Copyright (C) 2015 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -22,8 +22,26 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package io.github.astrapi69;
+package io.github.astrapi69.swing.splashscreen;
 
-public class InitialTemplate
+/**
+ * The factory class {@link SplashScreenFactory} provides factory methods for create
+ * {@link SplashScreen} objects
+ */
+public class SplashScreenFactory
 {
+	/**
+	 * Factory method for create a {@link SplashScreen}
+	 *
+	 * @param image
+	 *            the image
+	 * @param text
+	 *            the text
+	 * @return the new {@link SplashScreen} object
+	 */
+	public static SplashScreen newSplashScreen(final String image, final String text)
+	{
+		final SplashScreen splashscreen = new SplashScreen(image, text);
+		return splashscreen;
+	}
 }
