@@ -39,7 +39,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import io.github.astrapi69.lang.ClassExtensions;
-import io.github.astrapi69.model.api.Model;
+import io.github.astrapi69.model.api.IModel;
 import io.github.astrapi69.swing.base.BaseWindow;
 import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
 
@@ -66,7 +66,7 @@ public class BaseSplashScreen extends BaseWindow<SplashScreenModelBean>
 	JLabel textLabel;
 
 
-	public BaseSplashScreen(final JFrame frame, final Model<SplashScreenModelBean> model)
+	public BaseSplashScreen(final JFrame frame, final IModel<SplashScreenModelBean> model)
 	{
 		super(frame, model);
 		this.frame = frame;
@@ -103,7 +103,7 @@ public class BaseSplashScreen extends BaseWindow<SplashScreenModelBean>
 		return new JLabel(icon, SwingConstants.CENTER);
 	}
 
-	protected JLabel newTextLabel(final Model<SplashScreenModelBean> model)
+	protected JLabel newTextLabel(final IModel<SplashScreenModelBean> model)
 	{
 		return new JLabel(getModel().getObject().getText(), SwingConstants.CENTER);
 	}

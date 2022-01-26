@@ -199,7 +199,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:$lombokVersion")
     annotationProcessor("org.projectlombok:lombok:$lombokVersion")
     implementation("io.github.astrapi69:swing-base-components:$swingBaseComponentsVersion")
-    implementation("io.github.astrapi69:model-api:$modelApiVersion")
+    implementation("io.github.astrapi69:model-data:$modelDataVersion")
     implementation("io.github.astrapi69:jobj-core:$jobjCoreVersion")
     testCompileOnly("org.projectlombok:lombok:$lombokVersion")
     testAnnotationProcessor("org.projectlombok:lombok:$lombokVersion")

@@ -4,6 +4,10 @@
 Version 1.1-SNAPSHOT
 -------------
 
+CHANGED:
+
+- update of model-data dependency to new version 1.12
+
 Version 1
 -------------
 
