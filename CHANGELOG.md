@@ -10,9 +10,10 @@ CHANGED:
 - update dependency of com.github.ben-manes.versions.gradle.plugin to new version 0.41.0
 - update of dependency model-data to new version 1.12
 - update of dependency swing-base-components to new version 1.2
-- update of dependency jobj-core version to 5.3
-- update of test dependency silly-io version to 1.7
-- update of test dependency menu-actions version to 1.4
+- update of dependency jobj-core to new version to 5.3
+- update of test dependency silly-io to new version to 1.7
+- update of test dependency menu-actions to new version to 1.4
+- update of test dependency swing-components to new version 6
 
 Version 1
 -------------
