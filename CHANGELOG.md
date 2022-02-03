@@ -6,7 +6,13 @@ Version 1.1-SNAPSHOT
 
 CHANGED:
 
-- update of model-data dependency to new version 1.12
+- update gradle to new version 7.3.3
+- update dependency of com.github.ben-manes.versions.gradle.plugin to new version 0.41.0
+- update of dependency model-data to new version 1.12
+- update of dependency swing-base-components to new version 1.2
+- update of dependency jobj-core version to 5.3
+- update of test dependency silly-io version to 1.7
+- update of test dependency menu-actions version to 1.4
 
 Version 1
 -------------
