@@ -24,24 +24,29 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import java.awt.*;
+import io.github.astrapi69.lang.ClassExtensions;
+import io.github.astrapi69.model.api.IModel;
+import io.github.astrapi69.swing.base.BaseWindow;
+import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.experimental.FieldDefaults;
+
+import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.Border;
+import java.awt.BorderLayout;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.Border;
-
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.experimental.FieldDefaults;
-import io.github.astrapi69.lang.ClassExtensions;
-import io.github.astrapi69.model.api.Model;
-import io.github.astrapi69.swing.base.BaseWindow;
-import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
 
 /**
  * The BaseSplashScreen for an application
@@ -66,7 +71,7 @@ public class BaseSplashScreen extends BaseWindow<SplashScreenModelBean>
 	JLabel textLabel;
 
 
-	public BaseSplashScreen(final JFrame frame, final Model<SplashScreenModelBean> model)
+	public BaseSplashScreen(final JFrame frame, final IModel<SplashScreenModelBean> model)
 	{
 		super(frame, model);
 		this.frame = frame;
@@ -103,7 +108,7 @@ public class BaseSplashScreen extends BaseWindow<SplashScreenModelBean>
 		return new JLabel(icon, SwingConstants.CENTER);
 	}
 
-	protected JLabel newTextLabel(final Model<SplashScreenModelBean> model)
+	protected JLabel newTextLabel(final IModel<SplashScreenModelBean> model)
 	{
 		return new JLabel(getModel().getObject().getText(), SwingConstants.CENTER);
 	}

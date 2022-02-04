@@ -24,11 +24,12 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import java.awt.*;
+import io.github.astrapi69.model.api.IModel;
 
-import javax.swing.*;
-
-import io.github.astrapi69.model.api.Model;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import java.awt.BorderLayout;
 
 /**
  * The {@link ProgressBarSplashScreen} for an application that have to support progress bar
@@ -47,7 +48,7 @@ public class ProgressBarSplashScreen extends BaseSplashScreen
 
 	private JProgressBar progressBar;
 
-	public ProgressBarSplashScreen(final JFrame frame, final Model<SplashScreenModelBean> model)
+	public ProgressBarSplashScreen(final JFrame frame, final IModel<SplashScreenModelBean> model)
 	{
 		super(frame, model);
 	}

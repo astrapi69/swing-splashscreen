@@ -24,29 +24,28 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import java.util.LinkedHashSet;
-
-import javax.swing.*;
-
 import io.github.astrapi69.model.BaseModel;
-import io.github.astrapi69.model.api.Model;
-import io.github.astrapi69.swing.panels.lottery.LotteryBox;
-import io.github.astrapi69.swing.panels.lottery.LotteryPanel;
+import io.github.astrapi69.model.api.IModel;
+import io.github.astrapi69.swing.panel.lottery.LotteryBox;
+import io.github.astrapi69.swing.panel.lottery.LotteryPanel;
 import io.github.astrapi69.window.adapter.CloseWindow;
+
+import javax.swing.JFrame;
+import java.util.LinkedHashSet;
 
 public class BaseSplashScreenTest
 {
 
 	/**
 	 * Test init layout.
-	 * 
+	 *
 	 * @param args
 	 *            the arguments
 	 */
 	public static void main(final String[] args)
 	{
 		final JFrame frame = new JFrame("Lottery Panel");
-		Model<LotteryBox> lotteryModel;
+		IModel<LotteryBox> lotteryModel;
 		lotteryModel = BaseModel.of(LotteryBox.builder().selectedNumbers(new LinkedHashSet<>())
 			.minVolume(1).maxVolume(49).rows(7).columns(7).build());
 		final LotteryPanel panel = new LotteryPanel(lotteryModel);
@@ -57,7 +56,7 @@ public class BaseSplashScreenTest
 		SplashScreenModelBean splashScreenModelBean = SplashScreenModelBean.builder()
 			.imagePath(imagePath).text("BaseSplashScreen example").min(0).max(100).showTime(2000)
 			.showing(true).build();
-		Model<SplashScreenModelBean> modelBeanModel = BaseModel.of(splashScreenModelBean);
+		IModel<SplashScreenModelBean> modelBeanModel = BaseModel.of(splashScreenModelBean);
 		new BaseSplashScreen(frame, modelBeanModel);
 		frame.setSize(300, 200);
 		frame.setVisible(true);
