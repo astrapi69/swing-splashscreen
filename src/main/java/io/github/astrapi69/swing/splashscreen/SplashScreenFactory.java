@@ -28,20 +28,18 @@ package io.github.astrapi69.swing.splashscreen;
  * The factory class {@link SplashScreenFactory} provides factory methods for create
  * {@link SplashScreen} objects
  */
-public class SplashScreenFactory
-{
-	/**
-	 * Factory method for create a {@link SplashScreen}
-	 *
-	 * @param image
-	 *            the image
-	 * @param text
-	 *            the text
-	 * @return the new {@link SplashScreen} object
-	 */
-	public static SplashScreen newSplashScreen(final String image, final String text)
-	{
-		final SplashScreen splashscreen = new SplashScreen(image, text);
-		return splashscreen;
-	}
+public class SplashScreenFactory {
+    /**
+     * Factory method for create a {@link SplashScreen}
+     *
+     * @param image
+     *            the image
+     * @param text
+     *            the text
+     * @return the new {@link SplashScreen} object
+     */
+    public static SplashScreen newSplashScreen(final String image, final String text) {
+        final SplashScreen splashscreen = new SplashScreen(image, text);
+        return splashscreen;
+    }
 }

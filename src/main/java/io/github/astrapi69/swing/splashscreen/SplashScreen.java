@@ -24,13 +24,18 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import java.awt.*;
+import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
 
-import javax.swing.*;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JWindow;
+import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.Border;
-
-import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 
 /**
  * The SplashScreen from the application.
@@ -40,83 +45,70 @@ import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
  * @author Asterios Raptis
  *
  */
-public class SplashScreen extends JWindow
-{
-	/**
-	 * The serialVersionUID.
-	 */
-	private static final long serialVersionUID = 4667236770554004675L;
-	private boolean showing;
+public class SplashScreen extends JWindow {
+    /**
+     * The serialVersionUID.
+     */
+    private static final long serialVersionUID = 4667236770554004675L;
+    private boolean showing;
 
-	public SplashScreen(final String image, final String text)
-	{
-		final JPanel contentPane = new JPanel();
-		contentPane.setLayout(new BorderLayout());
-		final Border bd1 = BorderFactory.createBevelBorder(BevelBorder.RAISED);
-		final Border bd2 = BorderFactory.createEtchedBorder();
-		final Border bd3 = BorderFactory.createCompoundBorder(bd1, bd2);
-		contentPane.setBorder(bd3);
-		final ImageIcon icon = new ImageIcon(image);
-		contentPane.add("North", new JLabel(" ", SwingConstants.CENTER));
-		contentPane.add("Center", new JLabel(icon, SwingConstants.CENTER));
-		contentPane.add("South", new JLabel(text, SwingConstants.CENTER));
-		setContentPane(contentPane);
-	}
+    public SplashScreen(final String image, final String text) {
+        final JPanel contentPane = new JPanel();
+        contentPane.setLayout(new BorderLayout());
+        final Border bd1 = BorderFactory.createBevelBorder(BevelBorder.RAISED);
+        final Border bd2 = BorderFactory.createEtchedBorder();
+        final Border bd3 = BorderFactory.createCompoundBorder(bd1, bd2);
+        contentPane.setBorder(bd3);
+        final ImageIcon icon = new ImageIcon(image);
+        contentPane.add("North", new JLabel(" ", SwingConstants.CENTER));
+        contentPane.add("Center", new JLabel(icon, SwingConstants.CENTER));
+        contentPane.add("South", new JLabel(text, SwingConstants.CENTER));
+        setContentPane(contentPane);
+    }
 
-	/**
-	 * Returns the field <code>showme</code>.
-	 *
-	 * @return The field <code>showme</code>.
-	 */
-	@Override
-	public boolean isShowing()
-	{
-		return showing;
-	}
+    /**
+     * Returns the field <code>showme</code>.
+     *
+     * @return The field <code>showme</code>.
+     */
+    @Override
+    public boolean isShowing() {
+        return showing;
+    }
 
-	/**
-	 * Sets the field <code>showme</code>.
-	 *
-	 * @param showing
-	 *            The <code>showme</code> to set.
-	 */
-	public void setShowing(final boolean showing)
-	{
-		this.showing = showing;
-	}
+    /**
+     * Sets the field <code>showme</code>.
+     *
+     * @param showing
+     *            The <code>showme</code> to set.
+     */
+    public void setShowing(final boolean showing) {
+        this.showing = showing;
+    }
 
-	public void showFor(final int millis)
-	{
-		setVisible(true);
-		try
-		{
-			Thread.sleep(millis);
-		}
-		catch (final InterruptedException e)
-		{
-		}
-		setVisible(false);
-	}
+    public void showFor(final int millis) {
+        setVisible(true);
+        try {
+            Thread.sleep(millis);
+        } catch (final InterruptedException e) {
+        }
+        setVisible(false);
+    }
 
-	public void showing()
-	{
-		final Dimension dim = new Dimension(ScreenSizeExtensions.getScreenWidth(this),
-			ScreenSizeExtensions.getScreenHeight(this));
-		setLocation(dim.width / 3, dim.height / 3);
-		setSize(dim.width / 3, dim.height / 3);
-		setVisible(true);
-		toFront();
-		while (showing)
-		{
-			try
-			{
-				Thread.sleep(1000);
-			}
-			catch (final InterruptedException e)
-			{
-			}
-		}
-		setVisible(false);
-	}
+    public void showing() {
+        final Dimension dim = new Dimension(ScreenSizeExtensions.getScreenWidth(this),
+                ScreenSizeExtensions.getScreenHeight(this));
+        setLocation(dim.width / 3, dim.height / 3);
+        setSize(dim.width / 3, dim.height / 3);
+        setVisible(true);
+        toFront();
+        while (showing) {
+            try {
+                Thread.sleep(1000);
+            } catch (final InterruptedException e) {
+            }
+        }
+        setVisible(false);
+    }
 
 }

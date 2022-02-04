@@ -24,11 +24,12 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import java.awt.*;
-
-import javax.swing.*;
-
 import io.github.astrapi69.model.api.IModel;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import java.awt.BorderLayout;
 
 /**
  * The {@link ProgressBarSplashScreen} for an application that have to support progress bar
@@ -38,82 +39,67 @@ import io.github.astrapi69.model.api.IModel;
  * @author Asterios Raptis
  *
  */
-public class ProgressBarSplashScreen extends BaseSplashScreen
-{
-	/**
-	 * The serialVersionUID.
-	 */
-	private static final long serialVersionUID = 1L;
+public class ProgressBarSplashScreen extends BaseSplashScreen {
+    /**
+     * The serialVersionUID.
+     */
+    private static final long serialVersionUID = 1L;
 
-	private JProgressBar progressBar;
+    private JProgressBar progressBar;
 
-	public ProgressBarSplashScreen(final JFrame frame, final IModel<SplashScreenModelBean> model)
-	{
-		super(frame, model);
-	}
+    public ProgressBarSplashScreen(final JFrame frame, final IModel<SplashScreenModelBean> model) {
+        super(frame, model);
+    }
 
-	@Override
-	protected JPanel newContentPanel()
-	{
-		return new JPanel();
-	}
+    @Override
+    protected JPanel newContentPanel() {
+        return new JPanel();
+    }
 
-	@Override
-	protected void onAfterInitialize()
-	{
-		final StepSleepTimerThread stepSleepTimerThread = new StepSleepTimerThread(
-			getModelObject().getShowTime());
-		Thread splashscreenThread = new Thread()
-		{
-			@Override
-			public void run()
-			{
-				stepSleepTimerThread.start();
-				while (getModelObject().isShowing()
-					&& stepSleepTimerThread.getCount() <= getModelObject().getShowTime())
-				{
-					ProgressBarSplashScreen.this.setVisible(true);
-				}
-				ProgressBarSplashScreen.this.setVisible(false);
-				ProgressBarSplashScreen.this.dispose();
-				getFrame().setVisible(true);
-			}
-		};
+    @Override
+    protected void onAfterInitialize() {
+        final StepSleepTimerThread stepSleepTimerThread = new StepSleepTimerThread(
+                getModelObject().getShowTime());
+        Thread splashscreenThread = new Thread() {
+            @Override
+            public void run() {
+                stepSleepTimerThread.start();
+                while (getModelObject().isShowing()
+                        && stepSleepTimerThread.getCount() <= getModelObject().getShowTime()) {
+                    ProgressBarSplashScreen.this.setVisible(true);
+                }
+                ProgressBarSplashScreen.this.setVisible(false);
+                ProgressBarSplashScreen.this.dispose();
+                getFrame().setVisible(true);
+            }
+        };
 
-		final Runnable progressBarRunnable = new Runnable()
-		{
-			@Override
-			public void run()
-			{
-				System.out.println("running progress bar");
-				for (int i = getModelObject().getMin(); i <= getModelObject().getMax(); i++)
-				{
-					try
-					{
-						Thread.sleep(getModelObject().getShowTime() / getModelObject().getMax());
-					}
-					catch (InterruptedException e)
-					{
-					}
-					progressBar.setValue(i);
-				}
-			}
-		};
-		new Thread(splashscreenThread).start();
-		new Thread(progressBarRunnable).start();
-	}
+        final Runnable progressBarRunnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("running progress bar");
+                for (int i = getModelObject().getMin(); i <= getModelObject().getMax(); i++) {
+                    try {
+                        Thread.sleep(getModelObject().getShowTime() / getModelObject().getMax());
+                    } catch (InterruptedException e) {
+                    }
+                    progressBar.setValue(i);
+                }
+            }
+        };
+        new Thread(splashscreenThread).start();
+        new Thread(progressBarRunnable).start();
+    }
 
-	@Override
-	protected void onInitializeComponents()
-	{
-		super.onInitializeComponents();
-		progressBar = new JProgressBar(getModelObject().getMin(), getModelObject().getMax());
-	}
+    @Override
+    protected void onInitializeComponents() {
+        super.onInitializeComponents();
+        progressBar = new JProgressBar(getModelObject().getMin(), getModelObject().getMax());
+    }
 
-	@Override
-	protected void onInitializeLayout()
-	{
-		super.onInitializeLayout();
-		getContentPanel().add(progressBar, BorderLayout.SOUTH);
-	}
+    @Override
+    protected void onInitializeLayout() {
+        super.onInitializeLayout();
+        getContentPanel().add(progressBar, BorderLayout.SOUTH);
+    }
 }
