@@ -36,6 +36,29 @@ No animals were harmed in the making of this library.
 
 The source code comes under the liberal MIT License, making swing-splashscreen great for all types of applications.
 
+## gradle dependency
+
+You can first define the version in the ext section and add than the following gradle dependency to your
+project `build.gradle` if you want to import the core functionality of swing-splashscreen:
+
+define version in file gradle.properties
+
+```
+swingSplashscreenVersion=1.1
+```
+
+or in build.gradle ext area
+
+```
+    swingSplashscreenVersion = "1.1"
+```
+
+then add the dependency to the dependencies area
+
+```
+    implementation("io.github.astrapi69:swing-splashscreen:$swingSplashscreenVersion")
+```
+
 ## Maven dependency
 
 Maven dependency is now on sonatype. Check
@@ -50,7 +73,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- swing-splashscreen version -->
-        <swing-splashscreen.version>1</swing-splashscreen.version>
+        <swing-splashscreen.version>1.1</swing-splashscreen.version>
             ...
     </properties>
             ...
@@ -64,37 +87,6 @@ Than you can add the dependency to your dependencies:
             </dependency>
             ...
         </dependencies>
-
-## gradle dependency
-
-You can first define the version in the ext section and add than the following gradle dependency to your
-project `build.gradle` if you want to import the core functionality of swing-splashscreen:
-
-define version in file gradle.properties
-
-```
-swingSplashscreenVersion=1
-```
-
-or in build.gradle ext area
-
-```
-ext {
-            ...
-    swingSplashscreenVersion = "1"
-            ...
-}
-```
-
-then add the dependency to the dependencies area
-
-```
-dependencies {
-            ...
-    implementation("io.github.astrapi69:swing-splashscreen:$swingSplashscreenVersion")
-            ...
-}
-```
 
 # Donations
 
