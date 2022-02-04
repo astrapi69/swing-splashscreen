@@ -30,8 +30,8 @@ import javax.swing.*;
 
 import io.github.astrapi69.model.BaseModel;
 import io.github.astrapi69.model.api.IModel;
-import io.github.astrapi69.swing.panels.lottery.LotteryBox;
-import io.github.astrapi69.swing.panels.lottery.LotteryPanel;
+import io.github.astrapi69.swing.panel.lottery.LotteryBox;
+import io.github.astrapi69.swing.panel.lottery.LotteryPanel;
 import io.github.astrapi69.window.adapter.CloseWindow;
 
 public class BaseSplashScreenTest
