@@ -1,8 +1,8 @@
 /**
  * The MIT License
- *
+ * <p>
  * Copyright (C) 2021 Asterios Raptis
- *
+ * <p>
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
  * "Software"), to deal in the Software without restriction, including
@@ -10,10 +10,10 @@
  * distribute, sublicense, and/or sell copies of the Software, and to
  * permit persons to whom the Software is furnished to do so, subject to
  * the following conditions:
- *
+ * <p>
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
- *
+ * <p>
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -32,26 +32,33 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class StepSleepTimerThread extends Thread {
-    int count;
-    int sleepTime;
-    int step;
+public class StepSleepTimerThread extends Thread
+{
+	int count;
+	int sleepTime;
+	int step;
 
-    public StepSleepTimerThread(int sleepTime) {
-        this.step = 1;
-        this.count = 0;
-        this.sleepTime = sleepTime;
-    }
+	public StepSleepTimerThread(int sleepTime)
+	{
+		this.step = 1;
+		this.count = 0;
+		this.sleepTime = sleepTime;
+	}
 
-    @Override
-    public void run() {
-        while (count <= sleepTime) {
-            try {
-                Thread.sleep(step);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            count = step + count;
-        }
-    }
+	@Override
+	public void run()
+	{
+		while (count <= sleepTime)
+		{
+			try
+			{
+				Thread.sleep(step);
+			}
+			catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+			count = step + count;
+		}
+	}
 }
