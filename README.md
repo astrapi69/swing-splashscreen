@@ -2,14 +2,13 @@
 
 <div style="text-align: center">
 
-[![Build Status](https://travis-ci.com/astrapi69/swing-splashscreen.svg?branch=master)](https://travis-ci.com/github/astrapi69/swing-splashscreen)
-[![Coverage Status](https://codecov.io/gh/astrapi69/swing-splashscreen/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/swing-splashscreen)
+[![Java CI with Gradle](https://github.com/astrapi69/swing-splashscreen/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/swing-splashscreen/actions/workflows/gradle.yml)
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/swing-splashscreen.svg?style=flat)](https://github.com/astrapi69/swing-splashscreen/issues)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/swing-splashscreen/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/swing-splashscreen)
 [![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/swing-splashscreen.svg)](http://www.javadoc.io/doc/io.github.astrapi69/swing-splashscreen)
 [![MIT License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
-[![Hits Of Code](https://hitsofcode.com/github/astrapi69/swing-splashscreen)](https://hitsofcode.com/github/astrapi69/swing-splashscreen/view)
+[![Hits Of Code](https://hitsofcode.com/github/astrapi69/swing-splashscreen?branch=develop)](https://hitsofcode.com/github/astrapi69/swing-splashscreen/view?branch=develop)
 [![Lines Of Code](https://tokei.rs/b1/github/astrapi69/swing-splashscreen)](https://github.com/astrapi69/swing-splashscreen)
 
 </div>
