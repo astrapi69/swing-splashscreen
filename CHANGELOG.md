@@ -1,10 +1,25 @@
 ## Change log
 ----------------------
 
-Version 1.2-SNAPSHOT
+Version 2-SNAPSHOT
 -------------
 
+CHANGED:
 
+- update of JDK to newer version 11
+- update of gradle version to 7.5.1
+- update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.43.0
+- update of gradle-plugin dependency org.ajoberstar.grgit:grgit-gradle to new version 5.0.0
+- update of dependency lombok version to 1.18.24
+- update of dependency swing-base-components to new version 2.2
+- update of dependency model-data to new minor module version 2.1
+- update of dependency jobj-core version to 7
+- update of test dependency file-worker version to 11.4
+- update of test dependency silly-io to new version to 2.1
+- update of test dependency menu-actions to new version to 2.1
+- update of test dependency swing-components to new version 6
+- update of test dependency throwable to new minor version 2.3
+- update of test dependency junit-jupiter-api version to 5.9.1
 
 Version 1.1
 -------------
