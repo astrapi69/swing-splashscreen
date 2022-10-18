@@ -22,12 +22,6 @@ This repository provides splashscreen components for swing applications.
 >
 > If you love this project [![donation](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 
-# Template from this project
-
-You can derive your java library project from this you can easily and adapt to your specific project if you follow the
-instruction from
-this [medium blog](https://asterios-raptis.medium.com/new-github-template-repository-feature-ec09afe261b8)
-
 ## Note
 
 No animals were harmed in the making of this library.
@@ -44,13 +38,13 @@ project `build.gradle` if you want to import the core functionality of swing-spl
 define version in file gradle.properties
 
 ```
-swingSplashscreenVersion=1.1
+swingSplashscreenVersion=2
 ```
 
 or in build.gradle ext area
 
 ```
-    swingSplashscreenVersion = "1.1"
+    swingSplashscreenVersion = "2"
 ```
 
 then add the dependency to the dependencies area
@@ -73,7 +67,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- swing-splashscreen version -->
-        <swing-splashscreen.version>1.1</swing-splashscreen.version>
+        <swing-splashscreen.version>2</swing-splashscreen.version>
             ...
     </properties>
             ...
