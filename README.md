@@ -38,13 +38,13 @@ project `build.gradle` if you want to import the core functionality of swing-spl
 define version in file gradle.properties
 
 ```
-swingSplashscreenVersion=1.1
+swingSplashscreenVersion=2
 ```
 
 or in build.gradle ext area
 
 ```
-    swingSplashscreenVersion = "1.1"
+    swingSplashscreenVersion = "2"
 ```
 
 then add the dependency to the dependencies area
@@ -67,7 +67,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- swing-splashscreen version -->
-        <swing-splashscreen.version>1.1</swing-splashscreen.version>
+        <swing-splashscreen.version>2</swing-splashscreen.version>
             ...
     </properties>
             ...
