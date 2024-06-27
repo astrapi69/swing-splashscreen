@@ -1,18 +1,20 @@
 dependencies {
-    compileOnly("org.projectlombok:lombok:$lombokVersion")
-    annotationProcessor("org.projectlombok:lombok:$lombokVersion")
-    implementation("io.github.astrapi69:swing-base-components:$swingBaseComponentsVersion")
-    implementation("io.github.astrapi69:model-data:$modelDataVersion")
-    implementation("io.github.astrapi69:jobj-core:$jobjCoreVersion")
-    testCompileOnly("org.projectlombok:lombok:$lombokVersion")
-    testAnnotationProcessor("org.projectlombok:lombok:$lombokVersion")
-    testImplementation("org.swinglabs.swingx:swingx-all:$swingxAllVersion")
-    testImplementation("io.github.astrapi69:swing-components:$swingComponentsVersion")
-    testImplementation("io.github.astrapi69:menu-actions:$menuActionsVersion")
-    testImplementation("io.github.astrapi69:silly-io:$sillyIoVersion")
-    testImplementation("io.github.astrapi69:file-worker:$fileWorkerVersion")
-    testImplementation("io.github.astrapi69:throwable:$throwableVersion")
-    testImplementation("org.meanbean:meanbean:$meanbeanVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
+
+    compileOnly libs.lombok
+    annotationProcessor libs.lombok
+    testCompileOnly libs.lombok
+    testAnnotationProcessor libs.lombok
+
+    implementation libs.swing.base.components
+    implementation libs.model.data
+    implementation libs.jobj.core
+    testImplementation libs.swingx.all
+    testImplementation libs.swing.components
+    testImplementation libs.menu.actions
+    testImplementation libs.silly.io
+    testImplementation libs.file.worker
+    testImplementation libs.throwable
+    // Note: use of bundles...
+    testImplementation libs.bundles.unit.testing
+    testRuntimeOnly libs.junit.platform.launcher
 }

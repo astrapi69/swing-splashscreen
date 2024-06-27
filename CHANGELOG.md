@@ -1,8 +1,21 @@
 ## Change log
 ----------------------
 
-Version 2.1-SNAPSHOT
+Version 3-SNAPSHOT
 -------------
+
+ADDED:
+
+- new libs.versions.toml file for new automatic catalog versions update
+
+CHANGED:
+
+- update of JDK to newer version 17
+- update of gradle version to 8.8
+- update of gradle-plugin dependency with id 'com.github.ben-manes.versions' to new patch version 0.51.0
+- update of gradle-plugin dependency with id 'org.ajoberstar.grgit' to new patch version 5.2.2
+- update of gradle-plugin dependency with id 'io.freefair.lombok' to new patch version 8.6
+- update of gradle-plugin dependency with id 'com.diffplug.spotless' to new beta version 7.0.0.BETA1
 
 Version 2
 -------------
