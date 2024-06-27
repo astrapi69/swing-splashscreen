@@ -1,25 +1,27 @@
 [versions]
-file-worker-version = "11.4"
+awt-extensions-version = "1.2"
+file-worker-version = "17.2"
 gradle-plugin-grgit-version = "5.2.2"
 gradle-plugin-license-version = "0.16.1"
 gradle-plugin-lombok-version = "8.6"
 gradle-plugin-spotless-version = "7.0.0.BETA1"
 gradle-plugin-version-catalog-update-version = "0.8.4"
 gradle-plugin-versions-version = "0.51.0"
-jobj-core-version = "7"
+jobj-core-version = "8.2"
 junit-jupiter-version = "5.11.0-M2"
 junit-platform-launcher-version = "1.11.0-M2"
-lombok-version = "1.18.24"
+lombok-version = "1.18.32"
 meanbean-version = "2.0.3"
-menu-actions-version = "2.1"
-model-data-version = "2.1"
-silly-io-version = "2.1"
-swing-base-components-version = "2.2"
-swing-components-version = "7.2"
+menu-actions-version = "2.4"
+model-data-version = "3.1"
+silly-io-version = "3.1"
+swing-base-components-version = "4.2"
+swing-components-version = "9"
 swingx-all-version = "1.6.5-1"
 throwable-version = "2.3"
 
 [libraries]
+awt-extensions = { module = "io.github.astrapi69:awt-extensions", version.ref = "awt-extensions-version" }
 file-worker = { module = "io.github.astrapi69:file-worker", version.ref = "file-worker-version" }
 jobj-core = { module = "io.github.astrapi69:jobj-core", version.ref = "jobj-core-version" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter-version" }

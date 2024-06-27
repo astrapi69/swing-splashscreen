@@ -24,13 +24,12 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import io.github.astrapi69.lang.ClassExtensions;
-import io.github.astrapi69.model.api.IModel;
-import io.github.astrapi69.swing.base.BaseWindow;
-import io.github.astrapi69.swing.layout.ScreenSizeExtensions;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.experimental.FieldDefaults;
+import java.awt.BorderLayout;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
@@ -41,12 +40,14 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.Border;
-import java.awt.BorderLayout;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
+
+import io.github.astrapi69.awt.screen.ScreenSizeExtensions;
+import io.github.astrapi69.lang.ClassExtensions;
+import io.github.astrapi69.model.api.IModel;
+import io.github.astrapi69.swing.base.BaseWindow;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.experimental.FieldDefaults;
 
 /**
  * The BaseSplashScreen for an application

@@ -24,12 +24,13 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
-import io.github.astrapi69.model.api.IModel;
+import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
-import java.awt.BorderLayout;
+
+import io.github.astrapi69.model.api.IModel;
 
 /**
  * The {@link ProgressBarSplashScreen} for an application that have to support progress bar

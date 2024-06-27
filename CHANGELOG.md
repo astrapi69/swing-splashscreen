@@ -7,15 +7,26 @@ Version 3-SNAPSHOT
 ADDED:
 
 - new libs.versions.toml file for new automatic catalog versions update
+- new dependency awt-extensions in version 1.2
 
 CHANGED:
 
 - update of JDK to newer version 17
 - update of gradle version to 8.8
+- update of dependency lombok version to 1.18.32
 - update of gradle-plugin dependency with id 'com.github.ben-manes.versions' to new patch version 0.51.0
 - update of gradle-plugin dependency with id 'org.ajoberstar.grgit' to new patch version 5.2.2
 - update of gradle-plugin dependency with id 'io.freefair.lombok' to new patch version 8.6
 - update of gradle-plugin dependency with id 'com.diffplug.spotless' to new beta version 7.0.0.BETA1
+- update of dependency swing-base-components to new version 2.4
+- update of dependency jobj-core version to 8.2
+- update of test dependency file-worker version to 17.2
+- update of test dependency silly-io to new version to 3.1
+- update of test dependency menu-actions to new version to 2.4
+- update of test dependency model-data to new version to 3.1
+- update of test dependency silly-io to new version to 3.1
+- update of test dependency swing-components to new version 9
+- update of test dependency junit-jupiter version to 5.11.0-M2
 
 Version 2
 -------------

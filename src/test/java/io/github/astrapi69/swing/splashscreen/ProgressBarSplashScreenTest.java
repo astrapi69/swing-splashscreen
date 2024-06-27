@@ -24,14 +24,15 @@
  */
 package io.github.astrapi69.swing.splashscreen;
 
+import java.util.LinkedHashSet;
+
+import javax.swing.JFrame;
+
 import io.github.astrapi69.model.BaseModel;
 import io.github.astrapi69.model.api.IModel;
 import io.github.astrapi69.swing.panel.lottery.LotteryBox;
 import io.github.astrapi69.swing.panel.lottery.LotteryPanel;
 import io.github.astrapi69.window.adapter.CloseWindow;
-
-import javax.swing.JFrame;
-import java.util.LinkedHashSet;
 
 public class ProgressBarSplashScreenTest
 {
