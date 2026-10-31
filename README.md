@@ -4,12 +4,11 @@
 
 [![Java CI with Gradle](https://github.com/astrapi69/swing-splashscreen/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/swing-splashscreen/actions/workflows/gradle.yml)
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/swing-splashscreen.svg?style=flat)](https://github.com/astrapi69/swing-splashscreen/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/swing-splashscreen/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/swing-splashscreen)
-[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/swing-splashscreen.svg)](http://www.javadoc.io/doc/io.github.astrapi69/swing-splashscreen)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/swing-splashscreen)](https://central.sonatype.com/artifact/io.github.astrapi69/swing-splashscreen)
+[![Javadocs](https://javadoc.io/badge2/io.github.astrapi69/swing-splashscreen/javadoc.svg)](http://www.javadoc.io/doc/io.github.astrapi69/swing-splashscreen)
 [![MIT License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 [![Hits Of Code](https://hitsofcode.com/github/astrapi69/swing-splashscreen?branch=develop)](https://hitsofcode.com/github/astrapi69/swing-splashscreen/view?branch=develop)
-[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/swing-splashscreen)](https://github.com/astrapi69/swing-splashscreen)
 
 </div>
 
@@ -55,9 +54,7 @@ then add the dependency to the dependencies area
 
 ## Maven dependency
 
-Maven dependency is now on sonatype. Check
-out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~swing-splashscreen~~~)
-for latest snapshots and releases.
+The library is on Maven Central. Check out [Maven Central](https://central.sonatype.com/artifact/io.github.astrapi69/swing-splashscreen) for the latest release.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core functionality of
 swing-splashscreen:
